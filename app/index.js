@@ -1,21 +1,5 @@
-import React from "react";
-import { Text, View } from "react-native";
+import { Redirect } from "expo-router";
 
-const YourApp = () => {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>This is hard 🎉</Text>
-
-      <ScrollView></ScrollView>
-      <TextInput>Enter</TextInput>
-    </View>
-  );
-};
-
-export default YourApp;
+export default function Index() {
+  return <Redirect href="/home" />;
+}
