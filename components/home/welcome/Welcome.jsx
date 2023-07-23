@@ -12,6 +12,12 @@ const Welcome = () => {
         <Text style= {styles.welcomeMessage}>Find a Job</Text>
 
     </View>
+    <View style= {styles.searchContainer}>	
+    <View style= {styles.searchWrapper}>
+      <TextInput
+style= {styles.searchInput}
+      />
+    </View></View>
     </View>
   )
 }
