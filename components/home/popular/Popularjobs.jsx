@@ -8,7 +8,7 @@ import {
   ActivityIndicator,
   Flatlist,
 } from "react-native";
-import PopularJobCard from "../../common/cards";
+import PopularJobCard from "../../common/cards/popular/PopularJobCard";
 import { useRouter } from "expo-router";
 
 import { COLORS, SIZES } from "../../../constants";
