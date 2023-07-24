@@ -14,11 +14,13 @@ import { useRouter } from "expo-router";
 import { COLORS, SIZES } from "../../../constants";
 
 import styles from "./popularjobs.style";
+import useFetch from '../../../hooks/useFetch'
 
 const Popularjobs = () => {
   const router = useRouter;
-  const isLoading = false;
-  const error = false;
+ const {data, error, isLoading} = useFetch(
+  'search', {query: 'dev', num_pages: 1}
+ )
   return (
     <View styles={styles.container}>
       
